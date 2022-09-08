@@ -6,7 +6,6 @@ import (
 
 type Config struct {
 	Req *request.Request
-	Tes bool
 }
 
 func (c Config) Verify() {
