@@ -23,9 +23,9 @@ func (t Trade) Siz() float32 {
 
 type ListRequest struct {
 	ProductCode string `json:"-"`
-	Limit       int    `url:"limit"`
-	Start       int64  `url:"start_time"`
-	End         int64  `url:"end_time"`
+	Limit       int    `json:"limit"`
+	StartTime   int64  `json:"start_time"`
+	EndTime     int64  `json:"end_time"`
 }
 
 type ListResponse struct {
